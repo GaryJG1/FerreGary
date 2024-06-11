@@ -6,7 +6,7 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewNombre"
+        android:id="@+id/txv_ID_PRO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
@@ -16,12 +16,12 @@
         android:text="Nombre del Producto"/>
 
     <TextView
-        android:id="@+id/textViewApellido"
+        android:id="@+id/txv_Nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"/>
+        app:layout_constraintTop_toBottomOf="@+id/txv_ID_PRO"/>
 
     <TextView
         android:id="@+id/textViewCorreo"
@@ -29,10 +29,10 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewApellido"/>
+        app:layout_constraintTop_toBottomOf="@+id/txv_Nombre"/>
 
     <TextView
-        android:id="@+id/textViewContrasena"
+        android:id="@+id/txv_Descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
@@ -40,27 +40,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewCorreo"/>
 
     <TextView
-        android:id="@+id/textViewTelefono"
+        android:id="@+id/txv_Precio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewContrasena"/>
+        app:layout_constraintTop_toBottomOf="@+id/txv_Descripcion"/>
 
     <TextView
-        android:id="@+id/textViewDireccion"
+        android:id="@+id/txv_Stock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTelefono"/>
+        app:layout_constraintTop_toBottomOf="@+id/txv_Precio"/>
 
-    <TextView
-        android:id="@+id/textViewTipoUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDireccion"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

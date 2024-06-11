@@ -8,18 +8,36 @@
     tools:context=".MainActivity">
 
     <!-- activity_main.xml -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="407dp"
+        android:layout_height="444dp"
+        android:background="@android:color/white"
         android:clipToPadding="false"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:background="@android:color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/item_producto" />
+
+    <Button
+        android:id="@+id/btn_productos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Productos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.333">
+
+    </Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

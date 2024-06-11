@@ -1,5 +1,6 @@
 package com.tec.scrumferre
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,12 @@ class MainActivity : AppCompatActivity() {
         setupRecyclerView()
         setupRetrofit()
         getUsuarios()
+        binding.btnProductos.setOnClickListener {
+            val intent = Intent(this, MainActivityProductos::class.java)
+            startActivity(intent)
+
+
+        }
 
         // Inicializar el adaptador con una lista vacía
 
@@ -41,8 +48,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupAdapter() {
         adapter = ProductoAdapter()
-
-
     }
 
     private fun setupRetrofit() {
@@ -58,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupRecyclerView() {
         binding.recyclerView.apply {
-            layoutManager = StaggeredGridLayoutManager(  3, RecyclerView.VERTICAL)
+            layoutManager = StaggeredGridLayoutManager(  2, RecyclerView.VERTICAL)
             adapter = this@MainActivity.adapter}}
     private fun getUsuarios() {
         // Utilizar una corrutina para realizar la llamada al servicio en un hilo de fondo
