@@ -36,15 +36,12 @@ class ProductoAdapterOf(private var productos: List<usuarios.ProductoOf> = empty
         private val stock: TextView = itemView.findViewById(R.id.txv_Stock)
         private val precio: TextView = itemView.findViewById(R.id.txv_Precio)
 
-
-
         fun bind(producto: usuarios.ProductoOf) {
             nombre.text = producto.Nombre
             id.text = producto.ID_PRO.toString()
             descripcion.text = producto.Descripcion.toString()
             stock.text = producto.Stock.toString()
             precio.text = producto.Precio.toString()
-
         }
     }
 }
